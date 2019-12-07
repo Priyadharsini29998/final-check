@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Edit Movie-Admin</title>
+	</head>
+	<link rel="stylesheet" href="./style/style.css" type="text/css">
+	<script src="./js/script.js" type="text/javascript" ></script>
+	<body>
+		<header>
+				<span class="head-content">Movie Cruiser</span>
+				<span><img src="./images/logo.png"></span>
+				<span>
+					<nav>
+						<a class="header-link" href="movie-list-admin.html">Movies</a>
+					</nav>
+				</span>
+		</header>
+		<div>
+			<h1>Edit Movie</h1>
+			<form name="movie-cruiser" method="post" action="edit-movie-status.html" onSubmit="return validate()">
+				<table>
+					<tr colspan="4">
+						<td><label for="txtTitle">Title</label></td>
+					</tr>
+					<tr>
+						<td  colspan="4">
+							<input type="text" class="extend-cell" id="txtTitle" name="txtTitle" value="Avengers - End Game">
+						</td>
+					</tr>
+					<tr>
+						<td><label for="txtGross">Gross ($)</label></td>
+						<td>Active</td>
+						<td><label for="txtLaunch">Date of Launch</label></td>
+						<td><label for="drplist">Genre</label></td>
+					</tr>
+					<tr>
+						<td>
+							<input type="text" class="right-side" id="txtGross" name="txtGross" value="2787965087">
+						</td>
+						<td>
+							<input type="radio" id="rdoyes" name="rdoActive" checked>
+							<label for="rdoyes">Yes</label>
+							<input type="radio" id="rdono" name="rdoActive">
+							<label for="rdono">No</label>
+						</td>
+						<td>
+							<input type="text" id="txtLaunch" name="txtLaunch" value="27/04/2022">
+						</td>
+						<td>
+							<select name="Genre" id="drplist">
+								<option value="Opt1">Science Fiction</option>
+								<option value="Opt2" selected>Superhero</option>
+								<option value="Opt3">Romance</option>
+								<option value="Opt4">Comedy</option>
+								<option value="Opt5">Adventure</option>
+								<option value="Opt6">thriller</option>
+							</select>
+						</td>
+						<tr colspan="2">
+							<td>
+								<input type="checkbox" id="chkVal" name="chkval" checked>
+								<label for="chkVal">Has Teaser</label>
+							</td>
+						</tr>
+						<tr colspan="2">
+							<td>
+								<input type="submit" class="btn-style" value="Save" name="btnSave"/>
+							</td>
+						</tr>
+				</table>
+			</form>
+		</div>
+		<footer>
+			<h4>Copyright &copy 2019</h4>
+		</footer>
+		
+	</body>
+</html>

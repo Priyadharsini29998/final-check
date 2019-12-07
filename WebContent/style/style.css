@@ -1,1 +1,79 @@
-/* Add styles for application here */
+header {
+	background-color: #2a527a;
+	height: 80px;
+	width: 102%;
+}
+.head-content {
+	color: #ffffff;
+	font-size: 20px;
+	margin-top: -30px;
+	margin-left: 20px;
+}
+img {
+	width: 40px;
+	height: 50px;
+}
+.header-link {
+	float: right;
+	color: #ffffff;
+	margin-right: 80px;
+	margin-top: -10px;
+}
+div {
+	margin-left: 120px;
+	margin-top: 100px;
+	height: 690px;
+}
+.left-side {
+	text-align: left;
+}
+.right-side {
+	text-align: right;
+}
+.middle {
+	text-align: center;
+}
+.cell-large {
+	width: 200px;
+}
+.cell-small {
+	width: 120px;
+}
+.cell-medium {
+	width: 130px;
+}
+.extend-cell {
+	width : 700px ;
+}
+.btn-style {
+	width: 120px;
+	height: 50px;
+	background-color: #3a489c ;
+	color: #ffffff;
+}
+.action-note {
+	color: #000000;
+}
+.disp-status {
+	color: #23ad30;
+}
+.cust-notify {
+	color: #23ad30;
+	font-size: 20px;
+	margin-left: 250px;
+}
+a {
+	color: #2f88ed;
+}
+.empty {
+	color:#696c7a ;
+}
+footer {
+	background-color: #8b8d8f;
+	height: 80px;
+	width: 102%;
+}
+.footer-content {
+	margin-left: 50px;
+	font-size: 19px;
+}	/* Add styles for application here */
