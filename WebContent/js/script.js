@@ -12,7 +12,8 @@ function validate() {
 		alert("Title name should be greater than 2 letters...");
 		return false;
 	}
-	if(gross == "") {
+	if(gross == "") 
+	{
 		alert("Please provide gross value...");
 		return false;
 	}
