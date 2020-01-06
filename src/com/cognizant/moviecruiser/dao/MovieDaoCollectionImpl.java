@@ -14,15 +14,15 @@ public class MovieDaoCollectionImpl implements MovieDao {
 	public MovieDaoCollectionImpl() throws ParseException {
 		if (movieItemList == null) {
 			movieItemList = new ArrayList<>();
-			movieItemList.add(new Movie(1, "Avatar", 278796508, true, DateUtil.convertToDate("15/07/2017"),
+			movieItemList.add(new Movie(1, "Avatar", 27879658, true, DateUtil.convertToDate("15/07/2017"),
 					"Science Fiction", true));
-			movieItemList.add(new Movie(2, "The Avengers", 1518812988, true, DateUtil.convertToDate("23/12/2017"),
+			movieItemList.add(new Movie(2, "The Avengers", 151881988, true, DateUtil.convertToDate("23/12/2017"),
 					"Super Hero", false));
 			movieItemList.add(
-					new Movie(3, "Titanic", 218746394, true, DateUtil.convertToDate("21/08/2017"), "Romance", false));
-			movieItemList.add(new Movie(4, "Jurrasic World", 1671713208, false, DateUtil.convertToDate("02/07/2017"),
+					new Movie(3, "Titanic", 21876394, true, DateUtil.convertToDate("21/08/2017"), "Romance", false));
+			movieItemList.add(new Movie(4, "Jurrasic World", 167173208, false, DateUtil.convertToDate("02/07/2017"),
 					"Science Fiction", true));
-			movieItemList.add(new Movie(5, "Avengers: End Game", 275076034, true, DateUtil.convertToDate("02/11/2022"),
+			movieItemList.add(new Movie(5, "Avengers: End Game", 27576034, true, DateUtil.convertToDate("02/11/2022"),
 					"Super Hero", true));
 
 		}
@@ -38,7 +38,7 @@ public class MovieDaoCollectionImpl implements MovieDao {
 		List<Movie> movieItem = new ArrayList<>();
 		Date date = new Date();
 		for (Movie x : movieItemList) {
-			if (x.isActive() && x.dateOfLaunch().before(date)) {
+			if (x.isActive() && x.getDateOfLaunch().before(date)) {
 				movieItem.add(x);
 			}
 		}
@@ -53,7 +53,7 @@ public class MovieDaoCollectionImpl implements MovieDao {
 		menuId.setTitle(movieItem.getTitle());
 		menuId.setBoxOffice(movieItem.getBoxOffice());
 		menuId.setActive(movieItem.isActive());
-		menuId.setDateOFLaunch(movieItem.dateOfLaunch());
+		menuId.setDateOfLaunch(movieItem.getDateOfLaunch());
 		menuId.setGenre(movieItem.getGenre());
 		menuId.setHasTeaser(movieItem.isHasTeaser());
 	}

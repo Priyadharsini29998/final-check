@@ -41,7 +41,7 @@ public class MovieDaoCollectionImplTest {
 		MovieDao movieDao = new MovieDaoCollectionImpl();
 		List<Movie> movieItemList = movieDao.getMovieListCustomer();
 		for (Movie x : movieItemList) {
-			System.out.println(x.getDetails());
+			System.out.println(x.actionFavorite());
 		}
 
 	}

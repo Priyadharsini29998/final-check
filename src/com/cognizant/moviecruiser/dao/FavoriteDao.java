@@ -9,6 +9,6 @@ public interface FavoriteDao {
 
 	public List<Movie> getAllFavoriteList(long userId) throws FavoriteEmptyException;
 
-	public void removeFavorite(long userId, long movieId);
+	public void removeFavorite(long userId, long movieId) throws FavoriteEmptyException;
 
 }

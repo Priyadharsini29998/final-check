@@ -83,13 +83,17 @@ public class Movie {
 		this.active = active;
 	}
 
-	public Date dateOfLaunch() {
+	
+
+	public Date getDateOfLaunch() {
 		return dateOfLaunch;
 	}
 
-	public void setDateOFLaunch(Date dateOfLaunch) {
+	public void setDateOfLaunch(Date dateOfLaunch) {
 		this.dateOfLaunch = dateOfLaunch;
 	}
+
+	
 
 	public String getGenre() {
 		return genre;
@@ -112,7 +116,6 @@ public class Movie {
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		String pattern = "#,###,###,###";
 		DecimalFormat df = new DecimalFormat(pattern);
-
 		String details = String.format("%-20s $%-20s %-5s %-18s %-15s %-15s Edit", title, df.format(boxOffice),
 				active ? "Yes" : "No", sdf.format(dateOfLaunch), genre, hasTeaser ? "Yes" : "No");
 		return details;
