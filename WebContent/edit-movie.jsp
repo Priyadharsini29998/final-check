@@ -35,7 +35,8 @@
 				</tr>
 				<tr>
 					<td><input type="text" class="right-side" id="txtGross"
-						name="txtGross" value="${movie.boxOffice}" /></td>
+						name="txtGross" value="<fmt:formatNumber
+							value="${movie.boxOffice}" type="currency" />" /></td>
 					<td><input type="radio" name="rdoActive" id="rdoyes"
 						value="Yes" <c:if test="${movie.active eq 'true'}" Checked></c:if>>
 						<label for="rdoyes">Yes</label> <input type="radio" id="rdono"
