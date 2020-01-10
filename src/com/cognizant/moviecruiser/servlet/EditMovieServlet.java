@@ -53,7 +53,7 @@ public class EditMovieServlet extends HttpServlet {
 			boolean active = Boolean.parseBoolean(request.getParameter("rdoActive"));
 			String launch = request.getParameter("txtLaunch");
 			String genre = request.getParameter("genre");
-			boolean hasTeaser = Boolean.parseBoolean(request.getParameter("checkkval"));
+			boolean hasTeaser = Boolean.parseBoolean(request.getParameter("checkval"));
 			Movie movie = new Movie(id, title, gross, active, DateUtil.convertToDate(launch), genre, hasTeaser);
 			MovieDao movieDao = new MovieDaoCollectionImpl();
 			movieDao.modifyMovieItem(movie);

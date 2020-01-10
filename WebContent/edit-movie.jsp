@@ -59,7 +59,7 @@
 							<option value="Thriller">Thriller</option>
 					</select></td>
 				<tr colspan="2">
-					<td><input type="checkbox" id="chkVal" name="checkkval"
+					<td><input type="checkbox" id="chkVal" name="checkval"
 						value="Yes"
 						<c:if test="${movie.hasTeaser eq 'true'}" Checked></c:if>>
 						<label for="chkVal">Has Teaser</label></td>
