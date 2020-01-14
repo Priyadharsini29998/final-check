@@ -102,7 +102,7 @@ where f.fv_user_id=1;
 select count(mv_title) No_Of_Favorites
 from movie_item m
 join favorite f on (m.mv_id = f.fv_mv_id)
-where f.fv_user_id=2;
+where f.fv_user_id=1;
 
 -- ----------------------------------------------------------------------------
 -- Delete from Favorites
@@ -112,5 +112,14 @@ delete from favorite
 where fv_user_id = 2 and fv_mv_id = 1;
 
 -- ----------------------------------------------------------------------------
--- 
+-- Retrieving user Information after deletion
 -- ----------------------------------------------------------------------------
+
+select
+mv_title as Title ,
+mv_box as Box_Office ,
+mv_genre as Genre ,
+mv_teaser as Has_Teaser
+from movie_item m
+join favorite f on (m.mv_id = f.fv_mv_id)
+where f.fv_user_id=2;
