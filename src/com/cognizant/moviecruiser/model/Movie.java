@@ -25,7 +25,7 @@ public class Movie {
 		this.hasTeaser = hasTeaser;
 	}
 
-	public Movie(String string, String string2, boolean b, String string3, String string4, boolean c) {
+	public Movie() {
 		// TODO Auto-generated constructor stub
 	}
 
